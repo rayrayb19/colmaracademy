@@ -2,16 +2,24 @@
 
 
 /* Navigation */
-.nav {
+.navigationcontainer {
   padding-left: 24px;
   padding-right: 24px;
   height: 64px;
   width: 100%;
   position: fixed;
+  display: inline-flex;
 }
 
 .nav .img {
-  padding-left: 24px;
+  height: 200px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  align-items:flex-end;
 }
 
 /* Header Banner */
