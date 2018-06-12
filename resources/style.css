@@ -39,8 +39,40 @@ nav a {
   width: auto;
 }
 
+@media only screen and (min-width: 1200) {
+  .mobilenav {
+    display: none;
+  }
+  .mobilenav .img {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
-  
+
+  .mobilenav {
+    justify-content: center;
+  }
+  .mobilenav .img {
+    text-align: center;
+    padding: inherit;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav li {
+    display: none;
+  }
+
+  nav a {
+      display: none;
+    }
+
+  .navname {
+    display: none;
+  }
 }
 
 
