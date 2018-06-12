@@ -1,26 +1,48 @@
 /* Universal Styles */
-
+body {
+  padding-right: : 24px;
+  padding-left: 24px;
+}
 
 /* Navigation */
-.navigationcontainer {
-  padding-left: 24px;
-  padding-right: 24px;
+
+header {
   height: 64px;
   width: 100%;
   position: fixed;
   display: inline-flex;
+  align-items: center;
+  z-index: 2;
 }
 
-.nav .img {
-  height: 200px;
+nav {
+  position: absolute;
+  right: 50px;
+}
+
+nav li {
+  display: inline;
+  align-items: right;
+  margin: 16px;
+}
+
+nav a {
+    text-decoration: none;
+  }
+
+.navname {
+  font-size: 32px;
+}
+
+.navlogo .img {
+  height: 50px;
   width: auto;
 }
 
-.nav {
-  display: flex;
-  list-style: none;
-  align-items:flex-end;
+@media only screen and (max-width: 480px) {
+  
 }
+
 
 /* Header Banner */
 
