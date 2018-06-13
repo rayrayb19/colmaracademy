@@ -91,8 +91,35 @@ header .mobile ul {
     display: none;
   }
 
-
 /* Header Banner */
+
+.bannercontainer {
+
+}
+
+.bannercontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2.5rem;
+}
+
+.bannercontainer .img{
+  width: 60%;
+  height: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(34, 9%, 31%);
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+
+
 
 /* Practice & Information Section */
 
