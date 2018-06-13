@@ -37,7 +37,6 @@ header {
   margin-left: 1.5rem;
   margin-right: auto;
   font-size: 1.5rem;
-  font-family: 'Raleway';
 }
 
 nav {
@@ -47,8 +46,8 @@ nav {
 
 nav li {
   display: inline;
-  align-items: right;
-  margin: 16px;
+  align-items: center;
+  margin: 1rem;
 }
 
 nav a {
@@ -64,7 +63,7 @@ nav a {
   width: auto;
 }
 
-.nav mobile {
+header .mobile {
   display: none;
 }
 
@@ -72,24 +71,23 @@ nav a {
 
 @media only screen and (max-width: 480px) {
 
-  header .mobile {
-    display: block;
-    width: 100%;
-  }
+header .mobile {
+      display: block;
+      width: 100%;
+    }
 
-  header .mobile ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
+header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+}
 
-  nav .desktop ul {
+  header .desktop {
     display: none;
 }
 
-
-  header .navname {
+  .logoname {
     display: none;
   }
 
