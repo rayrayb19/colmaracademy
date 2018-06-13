@@ -1,23 +1,48 @@
+/* Stylesheet for Colmar Academy */
+
 /* Universal Styles */
 body {
-  padding-right: : 24px;
-  padding-left: 24px;
+  font-family:'Raleway', sans-serif;
+  font-size: 16px;
+  margin: 0;
 }
 
-/* Navigation */
+a {
+  color: inherit;
+}
+
+/* Desktop Navigation */
 
 header {
-  height: 64px;
+  height: 4rem;
   width: 100%;
   position: fixed;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   z-index: 2;
 }
 
+.navigationcontainer {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+.logoimg {
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.logoname {
+  margin-left: 1.5rem;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-family: 'Raleway';
+}
+
 nav {
   position: absolute;
-  right: 50px;
+  right: 1.5rem;
 }
 
 nav li {
@@ -31,49 +56,42 @@ nav a {
   }
 
 .navname {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .navlogo .img {
-  height: 50px;
+  height: 4rem;
   width: auto;
 }
 
-@media only screen and (min-width: 1200) {
-  .mobilenav {
-    display: none;
-  }
-  .mobilenav .img {
-    display: none;
-  }
+.nav mobile {
+  display: none;
 }
+
+/* Mobile Navigation */
 
 @media only screen and (max-width: 480px) {
 
-  .mobilenav {
-    justify-content: center;
-  }
-  .mobilenav .img {
-    text-align: center;
-    padding: inherit;
+  header .mobile {
+    display: block;
+    width: 100%;
   }
 
-  nav {
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav .desktop ul {
     display: none;
-  }
-
-  nav li {
-    display: none;
-  }
-
-  nav a {
-      display: none;
-    }
-
-  .navname {
-    display: none;
-  }
 }
+
+
+  header .navname {
+    display: none;
+  }
 
 
 /* Header Banner */
