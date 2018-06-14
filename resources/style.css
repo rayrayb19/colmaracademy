@@ -4,7 +4,7 @@
 body {
   font-family:'Raleway', sans-serif;
   font-size: 16px;
-  margin: 0;
+  margin-top: 0;
 }
 
 a {
@@ -17,6 +17,7 @@ header {
   height: 4rem;
   width: 100%;
   position: fixed;
+  background-color: white;
   display: flex;
   align-items: center;
   z-index: 2;
@@ -94,7 +95,8 @@ header .mobile ul {
 /* Header Banner */
 
 .bannercontainer {
-
+  display: flex;
+  background-color: hsl(34, 9%, 91%);
 }
 
 .bannercontent {
