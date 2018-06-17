@@ -3,12 +3,13 @@
 body {
   font-family:'Raleway', sans-serif;
   font-size: 16px;
-  color: #635A54;
+  color: #47463E;
   margin-top: 0;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 h1 {
@@ -187,7 +188,7 @@ main {
 
   .bannercontainer {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 2rem 1rem;
 }
 
@@ -206,6 +207,18 @@ main {
 
 /* Practice & Information Section */
 
+.mobilearticle {
+  display: none;
+}
+
+#textcta {
+  color: #68c1ec;
+}
+
+#textcta:hover{
+  color: red;
+}
+
 section .information {
   padding: 2rem 1.5rem;
   background-color: #ffffff;
@@ -216,20 +229,76 @@ section .information {
 .practicecontainer {
   padding: 2rem 1.5rem;
   display: flex;
-  align-items: flex-start;
+  flex-flow: column wrap;
 }
 
 .practiceimage {
   width: 60%;
   overflow: hidden;
+  padding-right: 1.5rem;
+  border-right: 1px solid #F2F0ED;
+
 }
 
 .practiceimage img {
   width: 100%;
 }
 
+.practicecontent {
+  max-width: 55%;
+  margin-bottom: 2rem;
+}
+
+.practicecontent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+
+}
+
+.practicecontent h4 {
+  font-size: 0.90rem;
+}
+
+
+.informationsection  {
+  max-width: 40%
+}
+
+.infoimage {
+  width: 35%;
+}
+
+.infocontent {
+  padding-left: 1.5rem
+  max-width: 60%;
+}
 
 /* Mobile Information Section */
+@media only screen and (max-width: 600px) {
+
+.practicecontainer {
+  display: none;
+}
+
+.desktoparticle {
+  display: none;
+}
+
+.informationsection {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem 1rem;
+}
+
+.mobilearticle img {
+  padding: 0;
+  width: 100%;
+}
+
+}
 
 
 /*Learning Section */
@@ -244,7 +313,7 @@ footer {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  border-top: 1px solid #31221c;
+  border-top: 1px solid #47463E;
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
