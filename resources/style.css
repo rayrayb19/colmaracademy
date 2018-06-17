@@ -97,7 +97,7 @@ header .mobile {
 
 /* Mobile Navigation Break at 600px */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
 header .mobile {
       display: block;
@@ -202,25 +202,34 @@ main {
     background: #85817a;
     font-weight: bold;
   }
+}
 
 /* Practice & Information Section */
 
-.minformation {
-  display: none;
+section .information {
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: row;
 }
+
+.practicecontainer {
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.practiceimage {
+  width: 60%;
+  overflow: hidden;
+}
+
+.practiceimage img {
+  width: 100%;
+}
+
 
 /* Mobile Information Section */
-@media only screen and (max-width: 480px) {
-
-  .practiceimage {
-    display: none;
-  }
-
-  .dinformation {
-    display: none;
-  }
-
-}
 
 
 /*Learning Section */
