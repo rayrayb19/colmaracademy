@@ -1,5 +1,4 @@
 /* Stylesheet for Colmar Academy */
-
 /* Universal Styles */
 body {
   font-family:'Raleway', sans-serif;
@@ -38,6 +37,7 @@ header {
   height: 4rem;
   width: 100%;
   position: fixed;
+  top: 0;
   background-color: white;
   display: flex;
   align-items: center;
@@ -47,13 +47,11 @@ header {
 .navigationcontainer {
   display: flex;
   align-items: center;
-  height: 4rem;
 }
 
 .logoimg {
   align-items: center;
   margin-left: 1.5rem;
-  height: 2rem;
   width: auto;
 }
 
@@ -83,10 +81,6 @@ nav li {
 
 nav li:hover{
   color: #68c1ec;
-}
-
-nav li:active{
-  color: #264669;
 }
 
 nav a {
@@ -133,21 +127,81 @@ header .mobile ul {
 
 /* Header Banner */
 
+main {
+  position: relative;
+  top: 4rem;
+}
+
+.bannercontainer {
+  padding: 2rem 1.5rem;
+  background-color: #D9D7D4;
+  display: flex;
+  align-items: center;
+}
+
+.bannerimage {
+  width: 60%;
+  overflow: hidden;
+}
+
+.bannerimage img {
+  width: 100%
+}
+
+.bannercontent {
+  color: #47463E;
+  margin: 0 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+}
+
+.bannercontent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
 .button {
   display: flex;
-  height: 50px;
-  width: 300px;
-  background: red;
+  min-height: 40px;
+  width: 80%;
+  background: #2D2C24;
   color: white;
   text-decoration: none;
   display: inline-block;
   text-align: center;
   align-items: center;
-  vertical-align: middle;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.button:hover{
+  background: #68c1ec;
+  color: #1d3758;
 }
 
 /* Mobile Header Banner */
 
+@media only screen and (max-width: 800px) {
+
+  .bannercontainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+}
+
+  .bannerimage {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  .button {
+    width: 100%;
+    background: #85817a;
+    font-weight: bold;
+  }
 
 /* Practice & Information Section */
 
