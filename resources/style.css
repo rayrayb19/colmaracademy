@@ -4,6 +4,7 @@
 body {
   font-family:'Raleway', sans-serif;
   font-size: 16px;
+  color: #635A54;
   margin-top: 0;
 }
 
@@ -52,12 +53,21 @@ header {
 .logoimg {
   align-items: center;
   margin-left: 1.5rem;
+  height: 2rem;
+  width: auto;
+}
+
+.logoimg img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .logoname {
-  margin-left: 1.5rem;
   margin-right: auto;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  color: #302721;
+  opacity: 60%;
 }
 
 nav {
@@ -71,6 +81,14 @@ nav li {
   margin: 1rem;
 }
 
+nav li:hover{
+  color: #68c1ec;
+}
+
+nav li:active{
+  color: #264669;
+}
+
 nav a {
     text-decoration: none;
   }
@@ -79,22 +97,18 @@ nav a {
   font-size: 28px;
 }
 
-.navlogo .img {
-  height: 4rem;
-  width: auto;
-}
-
 header .mobile {
   display: none;
 }
 
-/* Mobile Navigation */
+/* Mobile Navigation Break at 600px */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 
 header .mobile {
       display: block;
       width: 100%;
+      margin: 0.5rem 1.5rem;
     }
 
 header .mobile ul {
@@ -109,6 +123,10 @@ header .mobile ul {
 }
 
   .logoname {
+    display: none;
+  }
+
+  header .logoimg {
     display: none;
   }
 }
@@ -174,7 +192,7 @@ footer {
  bottom: 22px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 
   footer .footerright {
     display: none;
