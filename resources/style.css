@@ -11,6 +11,26 @@ a {
   color: inherit;
 }
 
+h1 {
+  font-size; 4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size; 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size; 0.5rem;
+  font-weight: normal;
+}
+
+h4 {
+  font-size; 0.15rem;
+  font-weight: lighter;
+}
+
 /* Desktop Navigation */
 
 header {
@@ -91,39 +111,44 @@ header .mobile ul {
   .logoname {
     display: none;
   }
+}
 
 /* Header Banner */
 
-.bannercontainer {
-  display: flex;
-  background-color: hsl(34, 9%, 91%);
-}
-
-.bannercontent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 2.5rem;
-}
-
-.bannercontainer .img{
-  width: 60%;
-  height: 100%;
-  padding: 2rem 1.5rem;
-}
-
 .button {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(34, 9%, 31%);
+  display: flex;
+  height: 50px;
+  width: 300px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
   text-align: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  align-items: center;
+  vertical-align: middle;
 }
 
-
+/* Mobile Header Banner */
 
 
 /* Practice & Information Section */
+
+.minformation {
+  display: none;
+}
+
+/* Mobile Information Section */
+@media only screen and (max-width: 480px) {
+
+  .practiceimage {
+    display: none;
+  }
+
+  .dinformation {
+    display: none;
+  }
+
+}
 
 
 /*Learning Section */
@@ -133,3 +158,30 @@ header .mobile ul {
 
 
 /* Footer */
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  border-top: 1px solid #31221c;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footerleft {
+ position: relative;
+ bottom: 22px;
+}
+
+@media only screen and (max-width: 480px) {
+
+  footer .footerright {
+    display: none;
+  }
+
+  footer .footerleft {
+    align-items: center;
+    padding-top: 1rem;
+  }
+}
