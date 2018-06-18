@@ -102,26 +102,26 @@ header .mobile {
   display: none;
 }
 
-/* Mobile Navigation Break at 600px */
+/* Mobile Navigation Break at 800px */
 
 @media only screen and (max-width: 800px) {
 
-header .mobile {
-      display: block;
-      width: 100%;
-      margin: 0.5rem 1.5rem;
-    }
+  header .mobile {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 1.5rem;
+  }
 
-header .mobile ul {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-}
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
 
   header .desktop {
     display: none;
-}
+  }
 
   .logoname {
     display: none;
@@ -196,7 +196,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem;
-}
+  }
 
   .bannerimage {
     width: 100%;
@@ -264,6 +264,7 @@ main {
 
 #information .sidebar {
   border-top: 1px solid #F2F0ED;
+  border-bottom: 1px solid #F2F0ED;
 }
 
 .thumbnails  {
@@ -307,18 +308,39 @@ main {
     display: none;
   }
 
-  .informationsection {
+  .sidebar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: 1rem 1rem;
   }
 
-  .mobilearticle img {
-    display: initial;
+  img {
     padding: 0;
     width: 100%;
   }
+
+  .sidebar img {
+    width: 35%;
+    margin: 1rem;
+  }
+
+  .sidebartext {
+    padding-left: 1rem;
+    max-width: 100%;
+  }
+
+  #information {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: 1rem;
+  }
+
+  #information .sidebar {
+    border-top: none;
+  }
+
 }
 
 
