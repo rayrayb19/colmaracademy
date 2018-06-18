@@ -343,6 +343,29 @@ main {
 
 /*Learning Section */
 
+.learning {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  background-color: #F2F0ED;
+}
+
+.course {
+  display: flex;
+  flex-direction: column wrap;
+  width: 25%;
+  margin: 2rem 4.5rem;
+  background-color: #ffffff;
+}
+
+.course img {
+  max-width: 100%;
+}
+
+.coursecontent {
+  padding: 1rem;
+}
 
 /* Thesis Section */
 
