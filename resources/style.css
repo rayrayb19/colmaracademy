@@ -213,10 +213,6 @@ main {
 
 /* Practice & Information Section */
 
-.mobilearticle {
-  display: none;
-}
-
 #textcta {
   color: #68c1ec;
 }
@@ -239,11 +235,9 @@ main {
 }
 
 .practiceimage {
-  width: 55%;
+  width: 100%;
   overflow: hidden;
   padding-right: 1.5rem;
-  border-right: 1px solid #F2F0ED;
-
 }
 
 .practiceimage img {
@@ -251,44 +245,80 @@ main {
 }
 
 .practicecontent {
-  max-width: 50%;
+  max-width: 95%;
   margin-bottom: 2rem;
 }
 
 .practicecontent h1 {
   margin-bottom: 1.5rem;
   margin-top: 2rem;
+}
 
+#information {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  margin: 1rem;
+  border-left: 1px solid #F2F0ED;
+}
+
+#information .sidebar {
+  border-top: 1px solid #F2F0ED;
 }
 
 .thumbnails  {
   max-width: 40%
 }
 
+.sidebar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.sidebar img {
+  width: 35%;
+  margin: 1rem;
+}
+
+.sidebar img:hover{
+  opacity: .50;
+}
+
+.sidebartext {
+  padding-left: 1rem;
+  max-width: 60%;
+}
+
+.mobilearticle {
+  display: none;
+}
+
 /* Mobile Information Section */
 @media only screen and (max-width: 600px) {
 
-.practicecontainer {
-  display: none;
-}
+  .practicecontainer {
+    display: none;
+  }
 
-.desktoparticle {
-  display: none;
-}
+  .desktoparticle {
+    display: none;
+  }
 
-.informationsection {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 1rem 1rem;
-}
+  .informationsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 1rem;
+  }
 
-.mobilearticle img {
-  display: initial;
-  padding: 0;
-  width: 100%;
-}
-
+  .mobilearticle img {
+    display: initial;
+    padding: 0;
+    width: 100%;
+  }
 }
 
 
@@ -320,7 +350,7 @@ main {
 }
 
 .thesiscontent {
-  max-width: 55%;
+  max-width: 95%;
   margin-bottom: 1rem;
 }
 
@@ -331,49 +361,29 @@ main {
   margin: 1rem;
 }
 
-.thumbnails  {
-  max-width: 40%
-}
-
-.sidebar {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 1rem;
-}
-
-.sidebar img {
-  width: 35%;
-  margin: 1rem;
-}
-
-.sidebartext {
-  padding-left: 1rem;
-  max-width: 60%;
-}
+/* Thesis Mobile Break @ 600px */
 
 @media only screen and (max-width: 600px) {
 
-.thesiscontent {
-  display: none;
+  .thesiscontent {
+    display: none;
+  }
+
+  #theisexhibit .sidebar {
+    display: none;
+  }
+
+  .thesisvideo {
+    width: 100%;
+    height: auto;
+  }
+
+  .thesisvideo video {
+    width: 100%;
+    height: auto;
+  }
 }
 
-#theisexhibit .sidebar {
-  display: none;
-}
-
-.thesisvideo {
-  width: 100%;
-  height: auto;
-}
-
-.thesisvideo video {
-  width: 100%;
-  height: auto;
-}
-
-}
 /* Footer */
 
 footer {
@@ -390,6 +400,8 @@ footer {
  position: relative;
  bottom: 22px;
 }
+
+/* Footer Mobile */
 
 @media only screen and (max-width: 600px) {
 
