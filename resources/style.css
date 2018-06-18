@@ -313,36 +313,29 @@ main {
   }
 
   .sidebar {
+    width: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 1rem 1rem;
   }
 
-  img {
-    padding: 0;
-    width: 100%;
-  }
-
-  .sidebar img {
-    width: 35%;
-    margin: 1rem;
-  }
-
-  .sidebartext {
-    padding-left: 1rem;
-    max-width: 100%;
+  #guest {
+    background-color: #ffffff;
   }
 
   .informationsidebar {
     display: flex;
-    flex-flow: column;
     width: 100%;
     margin: 1rem;
+    border: none;
   }
 
-  .informationsidebar {
-    border-top: none;
+  .mobilearticle {
+  display: inline;
+  min-width: 100%;
+}
+
+  .mobilearticle img {
+    width: 100%;
   }
 
 }
