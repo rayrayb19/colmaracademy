@@ -35,7 +35,7 @@ h4 {
 
 #title {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -312,21 +312,29 @@ main {
     display: none;
   }
 
+  .informationsidebar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+  }
+
   .sidebar {
-    width: inherit;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebartext {
+    width: 100%;
+    line-height: .85;
+    position: relative;
+    right: 95px;
   }
 
   #guest {
     background-color: #ffffff;
-  }
-
-  .informationsidebar {
-    display: flex;
-    width: 100%;
-    margin: 1rem;
-    border: none;
   }
 
   .mobilearticle {
@@ -347,7 +355,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: auto;
+  margin: 0;
   background-color: #F2F0ED;
 }
 
@@ -365,6 +373,39 @@ main {
 
 .coursecontent {
   padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .learning {
+    background-color: #ffffff;
+  }
+
+  .coursecontainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .course {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+    margin: 2rem 0 2rem 1rem;
+    background-color: #D9D7D4;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course h2 {
+    margin: 0.25rem;
+  }
+
+  .course h3 {
+    display: none;
+  }
 }
 
 /* Thesis Section */
