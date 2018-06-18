@@ -261,18 +261,8 @@ section .information {
 
 }
 
-
-.informationsection  {
+.thumbnails  {
   max-width: 40%
-}
-
-.infoimage {
-  width: 35%;
-}
-
-.infocontent {
-  padding-left: 1.5rem
-  max-width: 60%;
 }
 
 /* Mobile Information Section */
@@ -295,6 +285,7 @@ section .information {
 }
 
 .mobilearticle img {
+  display: initial;
   padding: 0;
   width: 100%;
 }
@@ -340,6 +331,10 @@ section .thesis {
   flex-flow: column;
   max-width: 40%;
   margin: 1rem;
+}
+
+.thumbnails  {
+  max-width: 40%
 }
 
 .sidebar {
