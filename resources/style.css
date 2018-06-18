@@ -25,6 +25,7 @@ h2 {
 h3 {
   font-size: 1rem;
   font-weight: normal;
+  line-height: 1.5;
 }
 
 h4 {
@@ -229,7 +230,7 @@ main {
 }
 
 .practicecontainer {
-  padding: 2rem 1.5rem;
+  padding: 1rem 1.5rem;
   display: flex;
   flex-flow: column wrap;
 }
@@ -254,7 +255,7 @@ main {
   margin-top: 2rem;
 }
 
-#information {
+.informationsidebar {
   display: flex;
   flex-flow: column;
   width: 100%;
@@ -262,8 +263,11 @@ main {
   border-left: 1px solid #F2F0ED;
 }
 
-#information .sidebar {
-  border-top: 1px solid #F2F0ED;
+#guest {
+  background-color: #D9D7D4;
+}
+
+.sidebar {
   border-bottom: 1px solid #F2F0ED;
 }
 
@@ -330,14 +334,14 @@ main {
     max-width: 100%;
   }
 
-  #information {
+  .informationsidebar {
     display: flex;
     flex-flow: column;
     width: 100%;
     margin: 1rem;
   }
 
-  #information .sidebar {
+  .informationsidebar {
     border-top: none;
   }
 
@@ -376,11 +380,15 @@ main {
   margin-bottom: 1rem;
 }
 
-#thesisexhibit {
+.thesissidebar {
   display: flex;
   flex-flow: column;
   width: 100%;
   margin: 1rem;
+}
+
+#fisma {
+  background-color: #D9D7D4;
 }
 
 /* Thesis Mobile Break @ 600px */
@@ -391,7 +399,7 @@ main {
     display: none;
   }
 
-  #theisexhibit .sidebar {
+  .thesissidebar {
     display: none;
   }
 
