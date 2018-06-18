@@ -302,7 +302,7 @@ main {
 }
 
 /* Mobile Information Section */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
   .practicecontainer {
     display: none;
@@ -385,6 +385,7 @@ main {
   flex-flow: column;
   width: 100%;
   margin: 1rem;
+  border-bottom: none;
 }
 
 #fisma {
@@ -393,7 +394,7 @@ main {
 
 /* Thesis Mobile Break @ 600px */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 
   .thesiscontent {
     display: none;
