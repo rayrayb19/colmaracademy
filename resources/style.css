@@ -13,23 +13,29 @@ a {
 }
 
 h1 {
-  font-size; 4rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 h2 {
-  font-size; 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 h3 {
-  font-size; 0.5rem;
+  font-size: 1rem;
   font-weight: normal;
 }
 
 h4 {
-  font-size; 0.15rem;
+  font-size: 0.75rem;
   font-weight: lighter;
+}
+
+#title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Desktop Navigation */
@@ -250,14 +256,9 @@ section .information {
 }
 
 .practicecontent h1 {
-  font-size: 2.5rem;
   margin-bottom: 1.5rem;
   margin-top: 2rem;
 
-}
-
-.practicecontent h4 {
-  font-size: 0.90rem;
 }
 
 
@@ -306,7 +307,80 @@ section .information {
 
 /* Thesis Section */
 
+section .thesis {
+  padding: 0 0 2rem 0;
+  background-color: #ffffff;
+  display: flex;
+}
 
+.thesiscontainer {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.thesisvideo {
+  width: 60%;
+  overflow: hidden;
+  padding-right: 1.5rem;
+
+}
+
+.thesisvideo video {
+  width: 100%;
+}
+
+.thesiscontent {
+  max-width: 55%;
+  margin-bottom: 1rem;
+}
+
+#thesisexhibit .thumbnails {
+  display: flex;
+  flex-flow: column;
+  max-width: 40%;
+  margin: 1rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.sidebar img {
+  width: 35%;
+  margin: 1rem;
+}
+
+.sidebartext {
+  padding-left: 1rem;
+  max-width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+
+.thesiscontent {
+  display: none;
+}
+
+#theisexhibit .sidebar {
+  display: none;
+}
+
+.thesisvideo {
+  width: 100%;
+  height: auto;
+}
+
+.thesisvideo video {
+  width: 100%;
+  height: auto;
+}
+
+}
 /* Footer */
 
 footer {
