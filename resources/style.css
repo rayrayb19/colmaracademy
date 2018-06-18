@@ -225,7 +225,7 @@ main {
   color: red;
 }
 
-section .information {
+.information {
   padding: 2rem 1.5rem;
   background-color: #ffffff;
   display: flex;
@@ -239,7 +239,7 @@ section .information {
 }
 
 .practiceimage {
-  width: 60%;
+  width: 55%;
   overflow: hidden;
   padding-right: 1.5rem;
   border-right: 1px solid #F2F0ED;
@@ -251,7 +251,7 @@ section .information {
 }
 
 .practicecontent {
-  max-width: 55%;
+  max-width: 50%;
   margin-bottom: 2rem;
 }
 
@@ -277,7 +277,6 @@ section .information {
 }
 
 .informationsection {
-  width: inherit;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -298,8 +297,7 @@ section .information {
 
 /* Thesis Section */
 
-section .thesis {
-  padding: 0 0 2rem 0;
+.thesis {
   background-color: #ffffff;
   display: flex;
 }
@@ -311,7 +309,7 @@ section .thesis {
 }
 
 .thesisvideo {
-  width: 60%;
+  width: 100%;
   overflow: hidden;
   padding-right: 1.5rem;
 
@@ -326,10 +324,10 @@ section .thesis {
   margin-bottom: 1rem;
 }
 
-#thesisexhibit .thumbnails {
+#thesisexhibit {
   display: flex;
   flex-flow: column;
-  max-width: 40%;
+  width: 100%;
   margin: 1rem;
 }
 
