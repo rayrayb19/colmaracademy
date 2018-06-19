@@ -361,7 +361,7 @@ main {
 
 .course {
   display: flex;
-  flex-direction: column wrap;
+  flex-direction: row wrap;
   width: 25%;
   margin: 2rem 4.5rem;
   background-color: #ffffff;
@@ -381,17 +381,11 @@ main {
     background-color: #ffffff;
   }
 
-  .coursecontainer {
-    display: flex;
-    align-items: center;
-  }
-
   .course {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: .25rem;
-    margin: 2rem 0 2rem 1rem;
+    margin: 2rem .5rem;
     background-color: #D9D7D4;
   }
 
