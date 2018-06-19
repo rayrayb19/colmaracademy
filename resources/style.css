@@ -33,12 +33,6 @@ h4 {
   font-weight: lighter;
 }
 
-#title {
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 /* Desktop Navigation */
 
 header {
@@ -189,7 +183,7 @@ main {
   color: #1d3758;
 }
 
-/* Mobile Header Banner */
+/* Mobile Header Banner Break @900px */
 
 @media only screen and (max-width: 900px) {
 
@@ -218,16 +212,16 @@ main {
 
 /* Practice & Information Section */
 
+#guest {
+  background-color: #D9D7D4;
+}
+
 .textcta {
   color: #68c1ec;
 }
 
 .textcta:hover{
   color: red;
-}
-
-#guest {
-  background-color: #D9D7D4;
 }
 
 .information {
@@ -300,7 +294,8 @@ main {
   display: none;
 }
 
-/* Mobile Information Section */
+/* Mobile Information Section Break w/ no images at 975 and full break at 600px */
+
 @media only screen and (max-width: 975px) {
   .desktoparticle {
     display: none;
@@ -335,10 +330,6 @@ main {
     text-align: left;
   }
 
-  #guest {
-    background-color: #ffffff;
-  }
-
   .mobilearticle {
     display: inline;
     min-width: 100%;
@@ -348,19 +339,22 @@ main {
     width: 100%;
   }
 
+  #guest {
+    background-color: #ffffff;
+  }
+
 }
 
+/* Learning & Courses Section */
 
-/*Learning Section */
+#startlearning {
+  text-align: center;
+}
 
 .learncourses {
   background-color: #F2F0ED;
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-}
-
-#startlearning {
-  text-align: center;
 }
 
 .learning {
@@ -391,6 +385,8 @@ main {
 .coursecontent {
   padding: 1rem;
 }
+
+/* Mobile Learning & Courses Section Break at 650px*/
 
 @media only screen and (max-width: 650px) {
 
@@ -431,6 +427,16 @@ main {
 
 /* Thesis Section */
 
+#thesisexhibit {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#fisma {
+  background-color: #D9D7D4;
+}
+
 .thesis {
   background-color: #ffffff;
   display: flex;
@@ -470,17 +476,7 @@ main {
   text-align: left;
 }
 
-#thesisexhibit {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-#fisma {
-  background-color: #D9D7D4;
-}
-
-/* Thesis Mobile Break */
+/* Thesis Mobile Break no images at 1000px full break at 900px*/
 @media only screen and (max-width: 1000px) {
   .desktoparticle {
     display: none;
@@ -525,7 +521,7 @@ footer {
  bottom: 22px;
 }
 
-/* Footer Mobile */
+/* Footer Mobile break at 600px */
 
 @media only screen and (max-width: 600px) {
 
