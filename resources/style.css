@@ -191,7 +191,7 @@ main {
 
 /* Mobile Header Banner */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
   .bannercontainer {
     flex-direction: column;
@@ -203,6 +203,10 @@ main {
     width: 100%;
     max-height: 300px;
     overflow: hidden;
+  }
+
+  .bannercontent {
+    text-align: left;
   }
 
   .button {
@@ -259,7 +263,8 @@ main {
   display: flex;
   flex-flow: column;
   width: 100%;
-  margin: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
+
   border-left: 1px solid #F2F0ED;
 }
 
@@ -348,18 +353,21 @@ main {
 
 /*Learning Section */
 
-#startlearning {
+.learncourses {
   background-color: #F2F0ED;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+#startlearning {
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .learning {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: #F2F0ED;
 }
 
@@ -384,7 +392,11 @@ main {
   padding: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+
+  .learncourses {
+    background-color: #ffffff;
+  }
 
   .learning {
     background-color: #ffffff;
@@ -460,8 +472,8 @@ main {
 
 #thesisexhibit {
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 #fisma {
@@ -493,12 +505,6 @@ main {
   .thesisvideo video {
     width: 100%;
     height: auto;
-  }
-
-  #thesisexhibit {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
   }
 }
 
