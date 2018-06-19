@@ -287,7 +287,7 @@ main {
 
 .sidebartext {
   padding-left: 1rem;
-  max-width: 60%;
+  max-width: 100%;
   padding: .5rem;
 }
 
@@ -296,7 +296,13 @@ main {
 }
 
 /* Mobile Information Section */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 975px) {
+  .desktoparticle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
 
   .practicecontainer {
     display: none;
@@ -317,14 +323,11 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .sidebartext {
     width: 100%;
-    line-height: .85;
-    position: relative;
-    right: 95px;
+    text-align: left;
   }
 
   #guest {
@@ -332,8 +335,8 @@ main {
   }
 
   .mobilearticle {
-  display: inline;
-  min-width: 100%;
+    display: inline;
+    min-width: 100%;
 }
 
   .mobilearticle img {
@@ -368,6 +371,11 @@ main {
   background-color: #ffffff;
 }
 
+.course:hover{
+  background-color: #68c1ec;
+  color: white;
+}
+
 .course img {
   max-width: 100%;
 }
@@ -389,6 +397,11 @@ main {
     align-items: center;
     margin: .75rem;
     background-color: #D9D7D4;
+  }
+
+  .course:hover{
+    background-color: #68c1ec;;
+    color: white;
   }
 
   .course img {
@@ -455,7 +468,12 @@ main {
   background-color: #D9D7D4;
 }
 
-/* Thesis Mobile Break @ 600px */
+/* Thesis Mobile Break */
+@media only screen and (max-width: 1000px) {
+  .sidebar img {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 900px) {
 
