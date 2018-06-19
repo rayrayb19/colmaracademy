@@ -355,7 +355,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0;
+  margin: ;
   background-color: #F2F0ED;
 }
 
@@ -363,7 +363,7 @@ main {
   display: flex;
   flex-direction: row wrap;
   width: 25%;
-  margin: 2rem 4.5rem;
+  margin: 1rem 1rem;
   background-color: #ffffff;
 }
 
@@ -379,13 +379,14 @@ main {
 
   .learning {
     background-color: #ffffff;
+    margin: 2rem .5rem;
   }
 
   .course {
     width: 100%;
     display: flex;
     align-items: center;
-    margin: 2rem .5rem;
+    margin: .75rem;
     background-color: #D9D7D4;
   }
 
