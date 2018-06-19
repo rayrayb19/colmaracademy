@@ -470,7 +470,7 @@ main {
 
 /* Thesis Mobile Break */
 @media only screen and (max-width: 1000px) {
-  .sidebar img {
+  .desktoparticle {
     display: none;
   }
 }
